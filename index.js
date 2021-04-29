@@ -240,3 +240,6 @@ app.get('/speaker/off', (req, res) => {
     res.send('speaker is off')
 
 })
+app.get('*', (req, res) => {
+    res.status(404).send(` error 404 page not found!`)
+ }) 
